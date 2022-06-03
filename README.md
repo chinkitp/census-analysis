@@ -18,3 +18,17 @@ git clone git@github.com:chinkitp/census-analysis.git
 # spin up the container
 docker-compose up
 ```
+
+## Sample Query
+
+```sql
+SELECT Median_rent_weekly,
+       Median_tot_hhd_inc_weekly,
+       Average_household_size,
+       Median_mortgage_repay_monthly
+FROM G02
+WHERE SSC_CODE_2016 =
+        (SELECT Census_Code_2016
+         FROM structures
+         WHERE Census_Name_2016 = 'Mawson Lakes');
+```
