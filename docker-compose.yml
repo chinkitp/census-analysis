@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  app:
+    image: rilldata/rill-developer:92845d8
+    environment:
+      PROJECT: rill-census-analysis
+      PROJECT_BASE: /app
+    ports:
+      - 8080:8080   
+    entrypoint: sh
+    tty: true 
+    volumes:
+      - ./app/:/app/
