@@ -6,5 +6,6 @@ ENV PROJECT=rill-census-analysis
 ENV PROJECT_BASE=/app
 
 RUN /app/scripts/init-project.sh
+RUN chmod +x /app/scripts/entrypoint.sh
 
 ENTRYPOINT /app/scripts/entrypoint.sh
