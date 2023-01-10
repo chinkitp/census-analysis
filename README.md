@@ -39,4 +39,3 @@ docker push ghcr.io/chinkitp/census-analysis:v0.0.x
 
 # update the docker-compose file
 # change this line image: ghcr.io/chinkitp/census-analysis:v0.0.x
-```
