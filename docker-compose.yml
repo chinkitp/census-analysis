@@ -1,6 +1,6 @@
 version: "3.7"
 services:
   app:
-    image: ghcr.io/chinkitp/census-analysis:v0.0.2
+    image: ghcr.io/chinkitp/census-analysis:v0.0.4
     ports:
-      - 8080:8080   
+      - 9009:9009   
