@@ -20,7 +20,7 @@ docker-compose up
 
 ## Sample Query
 
-> Open the browser at ```http://localhost:8080/``` to open 
+> Open the browser at ```http://localhost:9009/``` to open 
 
 ![Sample Rill Census Query](./docs/images/sample_query.png)
 
@@ -38,5 +38,4 @@ docker tag ghcr.io/chinkitp/census-analysis:v0.0.x ghcr.io/chinkitp/census-analy
 docker push ghcr.io/chinkitp/census-analysis:v0.0.x
 
 # update the docker-compose file
-
-```
+# change this line image: ghcr.io/chinkitp/census-analysis:v0.0.x
