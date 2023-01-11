@@ -8,7 +8,7 @@
 
 ```bash
 # login to github container registry
-export CR_PAT=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
+export CR_PAT=TOKEN
 echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 
 # download the code
