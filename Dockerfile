@@ -1,15 +1,15 @@
-FROM ubuntu:focal-20221130
-RUN apt-get update && apt-get install ca-certificates curl libdigest-sha-perl unzip -y 
+FROM ubuntu:23.10
+RUN apt-get update && apt-get install ca-certificates curl libdigest-sha-perl unzip sudo -y 
 
-COPY ./app/ /app/
+COPY ./rill-census-analysis /rill-census-analysis/
+COPY ./scripts/install.sh /install.sh
 
-ENV PROJECT=rill-census-analysis
-ENV PROJECT_BASE=/app
+ENV TERM=xterm
+ENV RILL_VERSION=0.28.0
 
-RUN curl -s https://cdn.rilldata.com/install.sh | bash
-RUN /app/scripts/init-project.sh
-RUN chmod +x /app/scripts/entrypoint.sh
+RUN chmod +x /install.sh
 
-COPY ./models/ /app/rill-census-analysis/models/
+RUN /install.sh
 
-ENTRYPOINT /app/scripts/entrypoint.sh
+ENTRYPOINT ["rill"]
+CMD ["start rill-census-analysis"]

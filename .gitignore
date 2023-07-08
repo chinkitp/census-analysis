@@ -2,3 +2,8 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Rill
+*.db
+*.db.tmp
+*.db.wal

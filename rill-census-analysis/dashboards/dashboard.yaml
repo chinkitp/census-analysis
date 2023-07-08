@@ -1,0 +1,9 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: "dashboard"
+model: ""
+default_time_range: ""
+smallest_time_grain: ""
+timeseries: ""
+measures: []
+dimensions: []
