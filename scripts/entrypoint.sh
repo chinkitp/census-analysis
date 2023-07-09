@@ -1,0 +1,1 @@
+rill start /rill-census-analysis
