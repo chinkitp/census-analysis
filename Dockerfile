@@ -10,6 +10,4 @@ RUN chmod +x /scripts/install.sh
 
 RUN /scripts/install.sh
 
-RUN rill start /rill-census-analysis
-
 ENTRYPOINT /scripts/entrypoint.sh
