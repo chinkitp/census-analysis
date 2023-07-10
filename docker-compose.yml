@@ -4,3 +4,5 @@ services:
     image: ghcr.io/chinkitp/census-analysis:0.0.7
     ports:
       - 9009:9009   
+    volumes:
+      - ./rill-census-analysis:/app

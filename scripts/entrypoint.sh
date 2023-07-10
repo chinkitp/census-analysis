@@ -1,1 +1,1 @@
-rill start /rill-census-analysis
+rill start /app
