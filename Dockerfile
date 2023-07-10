@@ -1,7 +1,7 @@
 FROM ubuntu:23.10
 RUN apt-get update && apt-get install ca-certificates curl libdigest-sha-perl unzip sudo -y 
 
-VOLUME /app
+COPY ./rill-census-analysis /apps/rill-census-analysis
 COPY ./scripts/ /scripts/
 ENV TERM=xterm
 

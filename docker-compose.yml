@@ -1,8 +1,6 @@
 version: "3.7"
 services:
   app:
-    image: ghcr.io/chinkitp/census-analysis:0.0.7
+    image: ghcr.io/chinkitp/census-analysis:0.0.8
     ports:
       - 9009:9009   
-    volumes:
-      - ./rill-census-analysis:/app
