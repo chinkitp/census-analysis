@@ -6,7 +6,7 @@ COPY ./scripts/ /scripts/
 
 ENV TERM=xterm
 
-RUN chmod +x /scripts/install.sh
+RUN chmod +x /scripts/*.sh
 
 RUN /scripts/install.sh
 
